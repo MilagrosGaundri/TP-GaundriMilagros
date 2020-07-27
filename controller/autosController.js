@@ -81,8 +81,8 @@ const autosController={
             concesionarias.autos.forEach(a=>{
                 
                 if(a.marca == marcaID.toLowerCase()){
-                    let x =[];
-                    let info= x.push(a.marca, a.modelo , a.anio , a.color);
+                    let info =[];
+                   info.push(a.marca, a.modelo , a.anio , a.color);
                     if(dataID.toLowerCase()== a.color){
                         res.write(`
                         ${'           ❖ Ingresaste el color "'+dataID+'" ❖'}
